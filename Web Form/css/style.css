@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  background-color: #faf5e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  background-color: #b6d9db;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+  max-width: 550px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  transition-behavior: normal;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+}
+h1:hover {
+  color: #faf5e6;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-row .form-group {
+  flex: 1;
+  min-width: 48%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.required {
+  color: red;
+  margin-left: 0.25rem;
+}
+.phone-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.country-code {
+  width: 35%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff6e6;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.country-code:focus {
+  outline: none;
+  border-color: hotpink;
+  box-shadow: 0 0 5px hotpink;
+  background-color: #ffeef6;
+}
+
+.phone-wrapper input {
+  flex: 1;
+}
+
+input,
+textarea,
+select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff6e6;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: hotpink;
+  box-shadow: 0 0 5px hotpink;
+  background-color: #ffeef6;
+}
+
+.gender-options {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.gender-options label {
+  font-weight: normal;
+}
+
+button {
+  background-color: #f4c430;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #e58dd2;
+  color: white;
+}
